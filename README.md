@@ -11,3 +11,10 @@
 -> Update, enable, disable (put) a single category - /api/category/update/:id
 -> Delete a category - /api/category/delete/:id
 
+# Product Route
+-> Get all products - /api/product/
+-> GET a single product - /api/product/:id
+-> Create a product - /api/product/create/
+-> Update, enable, disable (put) a single product - /api/product/update/:id
+-> Delete a product - /api/product/delete/:id
+
