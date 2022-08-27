@@ -9,7 +9,7 @@ function isCategoryNameInUse(category_name) {
       [category_name],
       function (error, results) {
         if (!error) {
-          // console.log("NAME COUNT : "+results[0].total);
+          // console.log("CATEGORY NAME COUNT : "+results[0].total);
           return resolve(results[0].total > 0);
         } else {
           return reject(new Error("Database error!!"));

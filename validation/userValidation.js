@@ -9,7 +9,7 @@ function isNameInUse(user_name) {
       [user_name],
       function (error, results) {
         if (!error) {
-          // console.log("NAME COUNT : "+results[0].total);
+          // console.log("USER NAME COUNT : "+results[0].total);
           return resolve(results[0].total > 0);
         } else {
           return reject(new Error("Database error!!"));
