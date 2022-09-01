@@ -48,7 +48,7 @@ module.exports = {
           else{
             return res.json({
               success: false,
-              code: 401,
+              code: 403,
               message: "Access Denied! You are not admin.",
             });
           }
@@ -56,6 +56,7 @@ module.exports = {
       });
     } else {
       return res.json({
+        code: 401,
         success: false,
         message: "Access Denied! Unauthorized User",
       });
